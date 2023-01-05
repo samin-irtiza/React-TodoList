@@ -1,7 +1,7 @@
-import React, {userState} from 'react'
+import React, {useState} from 'react'
 
 function TodoForm() {
-const [input, setInput] = userState('')
+const [input, setInput] = useState('');
   return (
     <form className='todo-form'>
         <input
