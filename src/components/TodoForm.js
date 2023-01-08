@@ -1,15 +1,30 @@
 import React, {useState} from 'react'
 
-function TodoForm() {
+function TodoForm(props) {
 const [input, setInput] = useState('');
+
+const viewChange = e => {
+  setInput(e.target.value)
+};
+
+const handleSubmit = e => {
+  e.preventDefault();
+  
+  // props.onSubmit({
+  //   id: Math.floor(Math.random()*10000),
+  //   text: input
+  // });
+  setInput('');
+};
   return (
-    <form className='todo-form'>
+    <form className='todo-form' onSubmit={handleSubmit}>
         <input
         type='text'
         placeholder='Add a task'
         value={input}
         name='text'
         className='todo-input'
+        onChange={viewChange}
         />
         <button className='todo-button'> Add Task</button>
     </form>
