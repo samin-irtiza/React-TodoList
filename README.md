@@ -2,11 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Follow the steps below to open the app
+1. install Nodejs from [here](https://nodejs.org/en/) if it's not already installed
 
-In the project directory, you can run:
+2. Go to [Releases Page](https://github.com/samin-irtiza/React-TodoList/releases) and download
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Extract and execute 'Open.bat'
